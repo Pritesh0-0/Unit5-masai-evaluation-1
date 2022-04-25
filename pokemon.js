@@ -1,20 +1,20 @@
 const poke_container = document.getElementById('poke_container');
 const pokemons_number = 45;
 const colors = {
-	fire: '#FFA500',
-	grass: '#008000',
-	electric: '#FF00FF',
-	water: '#FFFFFF',
-	ground: '#8B4513',
-	rock: '#708090',
-	fairy: '#00FFFF',
-	poison: '#6B8E23',
-	bug: '#A0522D',
-	dragon: '#FF0000',
-	psychic: '#1E90FF',
-	flying: '#E6E6FA',
-	fighting: '#BDB76B',
-	normal: '#FFE4E1'
+	f: '#FFA500',
+	green: '#008000',
+	purple: '#FF00FF',
+	white: '#FFFFFF',
+	brown: '#8B4513',
+	grey: '#708090',
+	aqua: '#00FFFF',
+	purphue: '#6B8E23',
+	greyhue: '#A0522D',
+	red: '#FF0000',
+	fidde: '#1E90FF',
+	blue: '#E6E6FA',
+	orghue: '#BDB76B',
+	trans: '#FFE4E1'
 };
 const main_types = Object.keys(colors);
 
@@ -46,9 +46,7 @@ function createPokemonCard(pokemon) {
         
         <div class="info">
             <h3 class="name">${name}</h3>
-            <span class="number">${pokemon.id
-							.toString()
-							.padStart(3)}</span>
+           
         </div>
     `;
 
